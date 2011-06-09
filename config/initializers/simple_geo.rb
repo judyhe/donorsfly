@@ -1,1 +1,1 @@
-SimpleGeo::Client.set_credentials('mgdQ3ckPk2BQ7dFDSRT9JLMgKNDFf3y4', ENV['t2tTQAuDUaQV3Czjag25Eu9SCb4ERyCs'])
+SimpleGeo::Client.set_credentials('DXG3YsGwFMEyCzVJha4kWYaW9A2FBgnu', ENV['SIMPLE_GEO_SECRET'])
