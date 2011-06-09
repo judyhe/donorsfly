@@ -4,6 +4,7 @@ gem 'rails', '3.0.7'
 gem 'pg'
 gem 'thin'
 gem 'simplegeo'
+gem 'hashie'
 
 group :development do
   gem 'ruby-debug19'
