@@ -13,7 +13,7 @@ class DonorsFly::DonorsChoose
       proposals = []
       if response && response['proposals']
         response['proposals'].each do |proposal|
-          proposals << (Proposal.new)
+          proposals << Proposal.new(proposal)
         end
       end
       

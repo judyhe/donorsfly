@@ -8,6 +8,12 @@
 </head>
 <body>
 
+Hi <%= @ip %> <%= @geo[:latitude] %>, <%= @geo[:longitude] %>,
+
+<% @proposals.each do |proposal| %>
+  <%= proposal.title %>
+<% end %>
+
 <%= yield %>
 
 </body>
