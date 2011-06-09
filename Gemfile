@@ -3,6 +3,7 @@ source 'http://rubygems.org'
 gem 'rails', '3.0.7'
 gem 'pg'
 gem 'thin'
+gem 'simplegeo'
 
 group :development do
   gem 'ruby-debug19'

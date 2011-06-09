@@ -1,0 +1,1 @@
+SimpleGeo::Client.set_credentials('mgdQ3ckPk2BQ7dFDSRT9JLMgKNDFf3y4', ENV['t2tTQAuDUaQV3Czjag25Eu9SCb4ERyCs'])
