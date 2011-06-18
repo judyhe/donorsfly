@@ -1,0 +1,50 @@
+body {font-family:"Trebuchet MS"}
+
+.box {border-radius: 15px; padding: 25px}
+.tag {border-radius: 10px; padding: 5px 10px}
+
+#header {margin-top: 10%;}
+
+#wrapper {width: 960px; margin: auto}
+#left {width:60%; float: left;}
+#right  {width:40%; float: right;}
+#donate {background-color: #eeeeee; margin-bottom: 20px;}
+#demo {background-color: #bebebe; }
+
+#sitetitle {font-size: 2.3em; margin-bottom: .5em}
+#subtitle {font-style: italic; margin-bottom: 20px;}
+
+#next {float: right;}
+
+#image { padding: 0 15px 10px 0; float: left;	}
+#subject, #resource { background-color: #abeae9; display: block; display: inline}
+#title {font-weight: bold; font-size: 1.5em; margin: 20px 0 10px 0;}
+#description { padding: 0 30px 0 0}
+
+#project-cost {float: left;}
+#project-balance {float: right;}
+.price {font-size: bold; font-size: 1.5em; margin: 10px 0;}
+.note {font-size: .5em;}
+
+#price-options ul,
+#price-options li {list-style: none; margin: 0; padding: 0; width: 80px; float: left; font-size: 0.95em;}
+
+#buy-out { padding: 15px 20px; font-size: 2em; font-weight: bold; float: right; background-color: }
+
+#buy-out {
+border-radius: 15px;
+color:#fff;
+background: #db0000; /* for non-css3 browsers */
+
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ef2f2f', endColorstr='#db0000'); /* for IE */
+background: -webkit-gradient(linear, left top, left bottom, from(#ef2f2f), to(#db0000)); /* for webkit browsers */
+background: -moz-linear-gradient(top,  #ef2f2f,  #db0000); /* for firefox 3.6+ */ 
+
+}
+
+.clear {clear:both;}
+.shadow {
+-moz-box-shadow: 5px 5px 5px #ccc;
+-webkit-box-shadow: 5px 5px 5px #ccc;
+box-shadow: 5px 5px 5px #ccc;
+}

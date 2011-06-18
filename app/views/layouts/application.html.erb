@@ -8,13 +8,17 @@
 </head>
 <body>
 
-Hi <%= @ip %> <%= @geo[:latitude] %>, <%= @geo[:longitude] %>,
+  <div id="wrapper">
+  	<div id="header">
+  	<div id="next">Next</div>
+  		<div id="sitetitle">DonorsFly</div>
+  		<div id="subtitle">Help this project take flight</div>
+  	</div>
+  	
+    <%= yield %>
+  </div>
 
-<% @proposals.each do |proposal| %>
-  <%= proposal.title %>
-<% end %>
 
-<%= yield %>
 
 </body>
 </html>
