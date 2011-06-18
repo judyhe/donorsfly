@@ -1,57 +1,43 @@
-<div id="left">
-  <p>Hi <%= @ip %> <%= @geo[:latitude] %>, <%= @geo[:longitude] %></p>
+<% @proposals.each do |proposal| %>
+  <div id="left">
+    <img id="image" src=<%= proposal.imageURL %> />
+    <div id="subject" class="tag"><%= proposal.subject['name'] %></div>  <div id="resource" class="tag"><%= proposal.resource['name'] %></div>
+    <div id="title"><%= proposal.title %></div>
+    <div id="description">
+      <%= proposal.shortDescription %>
+    </div>
+  </div>
+  <div id="right">
+  	<div id="donate" class="box">
+  		<div id="bar">
+  		<div id="funded-bar">[============----]</div>
+  		<div id="funded">65%</div>
 
-  <% @proposals.each do |proposal| %>
-    <p><%= proposal.title %></p>
-  <% end %>
-  
-	<img id="image" src="http://www.donorschoose.org/images/user/uploads/small/u807769_sm.jpg?timestamp=1298518041784">
-	<div id="subject" class="tag">Performing Arts</div>  <div id="resource" class="tag">Technology</div>
-	<div id="title">Self Critique</div>
-	<div id="description">
+  		</div>
+  		<div id="project-cost" class="price"><%= number_to_currency proposal.totalPrice %><span class="note">is needed</span></div>
+  		<div id="project-balance" class="price"><span class="note">remaining:</span><%= number_to_currency proposal.costToComplete %></div>
+  		<div id="price-options" class="clear">
+  			<ul><li>
+  			<a href="www">Give $10</a>
+  			</li><li>
+  			<a href="www">Give $25</a>
+  			</li><li>
+  			<a href="www">Give $50</a>
+  			</li></ul>
+  		</div>
+  		<div id="buy-out" class="shadow">Help it Fly</div>
+  		<div class="clear"></div>
 
-	<strong>My Students:</strong>
-My students LOVE making music, but they don't have many instruments. They don't even have a music room, so any instruments they play must fit on the rolling cart that I bring into their classrooms each time we have music class.
-</p>
-<p>I teach music in an inner city charter school where many of the students face challenging circumstances, including poverty, social and behavioral challenges, and few opportunities to participate in enrichment programs. However, they are bright, enthusiastic, and they love learning.</p>
-<p>
-<strong>My Project:</strong>
-My students have learned so much from our song and movement based music program, but they need a new challenge! I would like to buy soprano recorders for them, to add a new level of challenge to their music education experience and to share with them the thrill of learning to play an instrument.
-</p>
-<p>
-Soprano recorders are economical and sturdy and can be used with new students in subsequent years, so your donation to our recorder program will benefit students at my school for years to come.</div>
+  	</div>
+  	<div id="demo" class="box clear">
+  		<div id="quote">90% can't afford lunch</div>
+  		<div id="map">map</div>
+  	</div>
+  	<div id="simplegeo" class="box clear">
+  		<div id="income">$23,000</div>
+  		<div id="hood">Inglewood,  Bronx</div>
+  		<%= proposal.schoolName %>
+  	</div>
 
-</div>
-
-<div id="right">
-	<div id="donate" class="box">
-		<div id="bar">
-		<div id="funded-bar">[============----]</div>
-		<div id="funded">65%</div>
-
-		</div>
-		<div id="project-cost" class="price">$450 <span class="note">is needed</span></div>
-		<div id="project-balance" class="price"><span class="note">remaining:</span> $52.94</div>
-		<div id="price-options" class="clear">
-			<ul><li>
-			<a href="www">Give $10</a>
-			</li><li>
-			<a href="www">Give $25</a>
-			</li><li>
-			<a href="www">Give $50</a>
-			</li></ul>
-		</div>
-		<div id="buy-out" class="shadow">Help it Fly</div>
-		<div class="clear"></div>
-
-	</div>
-	<div id="demo" class="box clear">
-		<div id="quote">90% can't afford lunch</div>
-		<div id="map">map</div>
-	</div>
-	<div id="simplegeo" class="box clear">
-		<div id="income">$23,000</div>
-		<div id="hood">Inglewood,  Bronx</div>
-	</div>
-
-</div>
+  </div>
+<% end %>
